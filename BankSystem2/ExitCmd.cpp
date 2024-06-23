@@ -2,5 +2,5 @@
 
 void ExitCmd::execute()
 {
-	u.exit();
+	return;
 }

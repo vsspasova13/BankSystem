@@ -8,7 +8,7 @@ Bank::Bank(const MyString& name)
 	this->bankName = name;
 }
 
-Polymorphic_Ptr<Task>  Bank::openTask(const Client& c)
+Polymorphic_Ptr<Task> Bank::openTask(const Client& c)
 {
 	Polymorphic_Ptr<Task> task(new OpenTask(tasks.getSize(), c));
 	tasks.pushBack(task);
@@ -30,11 +30,12 @@ Polymorphic_Ptr<Task> Bank::changeTask(const Client& c)
 }
 void Bank::giveTask(const Polymorphic_Ptr<Task> task)
 {
+	if (employees.getSize() == 0)throw std::out_of_range("No employees");
+
 	int minInd = 0, minCount = employees[0].tasksCount();
 	for (int i = 0; i < employees.getSize(); i++)
 	{
-		if (employees[i].tasksCount() < minCount)
-			minInd = i;
+		if (employees[i].tasksCount() < minCount)minInd = i;
 	}
 	employees[minInd].addTask(task);
 }
@@ -46,6 +47,20 @@ const MyString& Bank::getName()const
 }
 const Vector<Polymorphic_Ptr<Task>>& Bank::getTasks()const
 {
-
 	return tasks;
+}
+
+Vector<Employee> Bank::getEmployees() 
+{
+	return employees;
+}
+
+Vector<Client> Bank::getClients() 
+{
+	return clients;
+}
+
+void Bank::addEmployee(const Employee& emp)
+{
+	employees.pushBack(emp);
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include "Command.h"
 #include "Client.h"
-class ListCmd :Command
+class ListCmd :public Command
 {
 private:
 	Client c;

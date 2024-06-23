@@ -2,7 +2,7 @@
 #include "Command.h"
 #include "MyString.h"
 #include "Client.h"
-class CloseCmd :Command
+class CloseCmd :public Command
 {
 private:
 	MyString bankName;

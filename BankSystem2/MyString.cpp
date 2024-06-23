@@ -81,6 +81,20 @@ MyString& MyString::operator+=(const MyString& other)
 
 }
 
+MyString& MyString::operator+=(char ch)
+{
+	int currSize = getSize();
+	if ((getSize() + 2) > allocatedDataSize)
+	{
+		resize(getAllocatedNewSize(getSize() + 1));
+	}
+
+	data[currSize+1] = ch;
+	size = getSize() + 1;
+	return *this;
+
+}
+
 char& MyString::operator[](size_t index)
 {
 

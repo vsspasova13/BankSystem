@@ -31,7 +31,7 @@ public:
 	const char* c_str()const;
 
 	MyString& operator+=(const MyString& other);
-
+MyString& operator+=(char ch);
 	char& operator[](size_t index);
 	const char& operator[](size_t index)const;
 

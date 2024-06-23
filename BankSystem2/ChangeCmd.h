@@ -3,7 +3,7 @@
 #include "MyString.h"
 #include "Client.h"
 
-class ChangeCmd :Command
+class ChangeCmd :public Command
 {
 private:
 	MyString currBank;

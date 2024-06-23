@@ -1,7 +1,7 @@
 #pragma once
 #include "Command.h"
 #include "Employee.h"
-class DisapproveCmd :Command
+class DisapproveCmd :public Command
 {
 private:
 	Employee e;

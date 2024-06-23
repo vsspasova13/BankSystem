@@ -2,5 +2,5 @@
 
 void HelpCmd::execute()
 {
-	u.help();
+	//u.help();
 }

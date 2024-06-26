@@ -34,6 +34,7 @@ struct Message
 
 class Client :public User
 {
+	//h
 private:
 	Vector<Account> accounts;
 	Vector<Message> mess;

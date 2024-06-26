@@ -17,9 +17,18 @@ protected:
 	int id;
 	Client client;
 	bool validated = false;
+	MyString bankName = "";
+	long acc_Num = 0;
 
 public:
 	Task(int id, const Client& cl) :id(id), client(cl) {};
+	Task(int id, const Client& cl, const MyString& bankName,long accNum) :
+		id(id), client(cl),
+		bankName(bankName),
+		acc_Num(accNum) {};
+	Task(int id, const Client& cl, const MyString& bankName) :
+		id(id), client(cl),
+		bankName(bankName){};
 	virtual Task* clone() const = 0;
 	virtual void execute(const MyString& bankName) = 0;
 	virtual void view()const = 0;
@@ -30,13 +39,21 @@ public:
 	{
 		validated = value;
 	}
-		bool getValidated()const
-		{
+	bool getValidated()const
+	{
 			return validated;
-		}
+	}
 	Client getClient()const
 	{
 		return client;
+	}
+	const MyString& getBankName()const
+	{
+		return bankName;
+	}
+	long getAccNum()const
+	{
+		return acc_Num;
 	}
 
 };

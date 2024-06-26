@@ -1,4 +1,5 @@
 #include "Employee.h"
+#include "../Task/ValidateTask.h"
 
 int Employee::tasksCount()const
 {
@@ -48,8 +49,12 @@ void Employee::disapprove(int taskId, const MyString& message) const
 
 bool Employee::validate(int taskId) 
 {
-	empTasks[taskId]->setValidated(true);
-
+	
+	Client cl=empTasks[taskId]->getClient();
+	ValidateTask val(cl,empTasks[taskId]->getBankName(),empTasks[taskId]->getAccNum());
+	bool isItValidated=val.validate();
+	empTasks[taskId]->setValidated(isItValidated);
+	return true;
 }
 
 User* Employee::clone() const

@@ -81,9 +81,6 @@
     <ClCompile Include="Commands\ClientCommands\ListCmd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Commands\SystemCommands\SignUp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="User\UserFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -121,6 +118,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Commands\CommandExecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\ValidateTask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -233,5 +233,11 @@
     <ClInclude Include="Commands\CommandExecutor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task\ValidateTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

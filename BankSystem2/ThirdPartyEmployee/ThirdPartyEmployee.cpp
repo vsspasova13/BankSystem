@@ -1,4 +1,5 @@
 #include "ThirdPartyEmployee.h"
+#include "../System/System.h"
 
 void ThirdPartyEmployee::send_check(unsigned long sum, const MyString& verification_code, unsigned long egn) const
 {

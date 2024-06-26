@@ -1,6 +1,6 @@
 #pragma once
 #include "../User/User.h"
-#include "../System/System.h"
+//#include "../System/System.h"
 
 class ThirdPartyEmployee:public User
 {

@@ -1,4 +1,7 @@
 #include "Client.h"
+#include "../System/System.h"
+
+class System;
 
 Client::Client()
 {
@@ -26,7 +29,7 @@ void Client::open(const MyString& bankName)
 	{
 		if (strcmp(s.getBanks()[i].getName().c_str(), bankName.c_str()) == 0)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].openTask(*this));
+			s.getBanks()[i].giveTask(s.getBanks()[i].openTask(*this,bankName));
 		}
 	}
 }
@@ -38,7 +41,7 @@ void Client::close(const MyString& bankName, unsigned long accNumber) const
 	{
 		if (s.getBanks()[i].getName() == bankName)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].closeTask(*this));
+			s.getBanks()[i].giveTask(s.getBanks()[i].closeTask(*this,bankName,accNumber));
 		}
 	}
 }
@@ -68,7 +71,7 @@ void Client::change(const MyString& newBankName, const MyString& currBankName, u
 	{
 		if (s.getBanks()[i].getName() == newBankName)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].changeTask(*this));
+			s.getBanks()[i].giveTask(s.getBanks()[i].changeTask(*this,newBankName,currBankName,accNumber));
 		}
 	}
 }

@@ -1,17 +1,19 @@
 #pragma once
 #include "Task.h"
+#include "../Bank/Bank.h"
+#include "../System/System.h"
+
+class Task;
+
 class ChangeTask :public Task
 {
 	const MyString& newBankName;
-	const MyString& currBankName;
-	long accNum;
 
 public:
 	ChangeTask(int id, const Client& cl, const MyString& newBankName, const MyString& currBankName,
-	long accNum) :Task(id, cl), 
-		newBankName(newBankName), 
-		currBankName(currBankName), 
-		accNum(accNum) {};
+	long accNum) :
+		Task(id, cl,currBankName,accNum), 
+		newBankName(newBankName){};
 	
 	void print()const override;
 	void view()const override;

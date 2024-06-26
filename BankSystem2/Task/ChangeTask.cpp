@@ -15,6 +15,16 @@ void ChangeTask::view() const
 
 void ChangeTask::execute(const MyString& newBankName)
 {
+	System& s = System::getInstance();
+	//bool b=s.findBankByName(newBankName).containsClientByAccountNum(acc_Num);
+	Bank& newB = s.findBankByName(newBankName);
+	Bank& oldB = s.findBankByName(bankName);
+
+	newB.addClient(client);
+	client.addAccount(newBankName, 99);
+
+	oldB.removeClient(client);
+	client.removeAccount(bankName, acc_Num);
 
 }
 

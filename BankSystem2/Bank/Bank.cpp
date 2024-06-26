@@ -1,27 +1,30 @@
 #include "Bank.h"
+#include "..\Task\OpenTask.h"
+#include "..\Task\ChangeTask.h"
+#include "..\Task\CloseTask.h"
 
 Bank::Bank(const MyString& name)
 {
 	this->bankName = name;
 }
 
-Polymorphic_Ptr<Task> Bank::openTask(const Client& c)
+Polymorphic_Ptr<Task> Bank::openTask(const Client& c, const MyString& bankName)
 {
-	Polymorphic_Ptr<Task> task(new OpenTask(tasks.getSize(), c));
+	Polymorphic_Ptr<Task> task(new OpenTask(tasks.getSize(), c, bankName));
 	tasks.pushBack(task);
 	return task;
 }
 
-Polymorphic_Ptr<Task> Bank::closeTask(const Client& c)
+Polymorphic_Ptr<Task> Bank::closeTask(const Client& c, const MyString& currBankName, unsigned long accNumber)
 {
-	Polymorphic_Ptr<Task> task(new CloseTask(tasks.getSize(), c));
+	Polymorphic_Ptr<Task> task(new CloseTask(tasks.getSize(), c,currBankName,accNumber));
 	tasks.pushBack(task);
 	return task;
 	
 }
-Polymorphic_Ptr<Task> Bank::changeTask(const Client& c)
+Polymorphic_Ptr<Task> Bank::changeTask(const Client& c, const MyString& newBankName, const MyString& currBankName, unsigned long accNumber)
 {
-	Polymorphic_Ptr<Task> task(new ChangeTask(tasks.getSize(), c));
+	Polymorphic_Ptr<Task> task(new ChangeTask(tasks.getSize(), c,newBankName,currBankName,accNumber));
 	tasks.pushBack(task);
 	return task;
 }
@@ -60,6 +63,28 @@ Vector<Client> Bank::getClients()
 void Bank::addEmployee(const Employee& emp)
 {
 	employees.pushBack(emp);
+}
+
+void Bank::addClient(const Client& cl)
+{
+	clients.pushBack(cl);
+}
+
+size_t Bank::findClientIndex(const Client& cl)const
+{
+	for (size_t i = 0; i < clients.getSize(); i++)
+	{
+		if (clients[i].getEgn() == cl.getAge())
+			return i;
+	}
+	return -1;
+}
+
+void Bank::removeClient(const Client& cl)
+{
+	//ex
+	int ind = findClientIndex(cl);
+	clients.erase(ind);
 }
 
 bool Bank::containsClientByAccountNum(long accountNum) const

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ApproveCmd" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAEAAAAAAAAAAACAAAAAAAAAgA=</HashCode>
+      <FileName>Commands\EmployeeCommands\ApproveCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank" Collapsed="true">
+    <Position X="44.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QYAAAAQCAAAAAAAAAIAIAAAgCAAAEIwQAAAEAIAAAoA=</HashCode>
+      <FileName>Bank\Bank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChangeCmd" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAEAAAAAAIAAACAAAAAAAACAAA=</HashCode>
+      <FileName>Commands\ClientCommands\ChangeCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChangeTask" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAACAAAAAAAEAAAABQAAAAAAAQAAEAAAAAA=</HashCode>
+      <FileName>Task\ChangeTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheckAvlCmd" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAiAAA=</HashCode>
+      <FileName>Commands\ClientCommands\CheckAvlCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkgBAAAIABBAACAAACAgAIAAAAIBQIAAEAAIAAQ=</HashCode>
+      <FileName>Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloseCmd" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAEACAAAAAAAECAAA=</HashCode>
+      <FileName>Commands\ClientCommands\CloseCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CloseTask" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAAAAAAAAAEAAAAAQAAAAAAAQAAEAAAAAA=</HashCode>
+      <FileName>Task\CloseTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Command" Collapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandExecutor" Collapsed="true">
+    <Position X="47" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Commands\CommandExecutor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommandFactory" Collapsed="true">
+    <Position X="48.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAEBIAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateBankCmd" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Commands\SystemCommands\CreateBankCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DisapproveCmd" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAEAAAAAAAAAAACAAAAAAAAAiA=</HashCode>
+      <FileName>Commands\EmployeeCommands\DissaproveCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Employee" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgIgIAAAAAAAAAAAAAAAgSAAAEAgAAQgAEAAAAAA=</HashCode>
+      <FileName>Employee\Employee.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExitCmd" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Commands\UserCommands\ExitCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpCmd" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\UserCommands\HelpCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListCmd" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAEAAAAAAAAEACAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ClientCommands\ListCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginCmd" Collapsed="true">
+    <Position X="40.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAEAAAgAAAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Commands\SystemCommands\LoginCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MessagesCmd" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ClientCommands\MessagesCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyString" Collapsed="true">
+    <Position X="45.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAAIIAAAAAEIIAAAQIBAAGAAAAAAQAwAAAAAAA=</HashCode>
+      <FileName>Utils\MyString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenCmd" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAEAAAAAAAAEACAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ClientCommands\OpenCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenTask" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAEAAAAAQAAAAAAAQAAEAAAAAA=</HashCode>
+      <FileName>Task\OpenTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Polymorphic_Ptr&lt;T&gt;" Collapsed="true">
+    <Position X="47" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAACAAAAAAAAAQgAAAAAAAEAAAQAgAAAAAAA=</HashCode>
+      <FileName>Utils\Polymorphic_Ptr.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RedeemCmd" Collapsed="true">
+    <Position X="38.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAgAAIAAAEACAAAAAAAACAAA=</HashCode>
+      <FileName>Commands\ClientCommands\RedeemCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SednCheckCmd" Collapsed="true">
+    <Position X="42.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABAAAAAAEAAAAIIAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Commands\ThirdPartyEmployeeCommands\SednCheckCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignUpCmd" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACEAAAACRAAAAAAEABAAAAAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Commands\SystemCommands\SignUpCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System" Collapsed="true">
+    <Position X="48.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAASAIAIQAAAAAIAAAAAIAAAAAAAQAAAAgAAAAEAI=</HashCode>
+      <FileName>System\System.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAIAAAAAAAAAgAAQEACAAAQAAEAAAAUIAFQAAAkA=</HashCode>
+      <FileName>Task\Task.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasksCmd" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAEAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\EmployeeCommands\TasksCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThirdPartyEmployee" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgACAAAAAAAAAAAACAgAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ThirdPartyEmployee\ThirdPartyEmployee.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="User" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAGgEAAAARAAAAAAAAAAgAAQEAAAAAAAEECAAAAA=</HashCode>
+      <FileName>User\User.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserFactory" Collapsed="true">
+    <Position X="45.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>User\UserFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidateCmd" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAACAAAAAAAAAgA=</HashCode>
+      <FileName>Commands\EmployeeCommands\ValidateCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vector&lt;T&gt;" Collapsed="true">
+    <Position X="47" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAiAAIIBAIAAAAIIIAAAAAAGAAAAAAUAwAAAAQAA=</HashCode>
+      <FileName>Utils\Vector.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewCmd" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAACAACAAAAAAAAAgA=</HashCode>
+      <FileName>Commands\EmployeeCommands\ViewCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhoAmICmd" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\UserCommands\WhoAmICmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Check" Collapsed="true">
+    <Position X="47" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Account" Collapsed="true">
+    <Position X="45.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Message" Collapsed="true">
+    <Position X="48.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgA=</HashCode>
+      <FileName>Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TaskType" Collapsed="true">
+    <Position X="45.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAA=</HashCode>
+      <FileName>Task\Task.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

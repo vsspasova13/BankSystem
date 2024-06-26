@@ -1,8 +1,11 @@
 #pragma once
 #include "..\User\User.h"
-#include "..\System\System.h"
+//#include "..\System\System.h"
+#include "../Utils/MyString.h"
+#include "../Utils/Polymorphic_Ptr.hpp"
+#include "../Utils/Vector.hpp"
 
-class BankAccount;
+class User;
 
 struct Check
 {
@@ -34,7 +37,7 @@ struct Message
 
 class Client :public User
 {
-	//h
+	
 private:
 	Vector<Account> accounts;
 	Vector<Message> mess;

@@ -1,6 +1,39 @@
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\mystring.obj
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\system.obj
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\user.obj
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\vc143.idb
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\vc143.pdb
-d:\уни\2 сем\ооп\proekt\banksystem2\x64\debug\banksystem2.tlog\cl.command.1.tlog
+d:\banksystem\banksystem2\x64\debug\vc143.pdb
+d:\banksystem\banksystem2\x64\debug\vc143.idb
+d:\banksystem\banksystem2\x64\debug\user.obj
+d:\banksystem\banksystem2\x64\debug\mystring.obj
+d:\banksystem\banksystem2\x64\debug\system.obj
+d:\banksystem\banksystem2\x64\debug\userfactory.obj
+d:\banksystem\banksystem2\x64\debug\signupcmd.obj
+d:\banksystem\banksystem2\x64\debug\messagescmd.obj
+d:\banksystem\banksystem2\x64\debug\commandexecutor.obj
+d:\banksystem\banksystem2\x64\debug\closecmd.obj
+d:\banksystem\banksystem2\x64\debug\client.obj
+d:\banksystem\banksystem2\x64\debug\checkavlcmd.obj
+d:\banksystem\banksystem2\x64\debug\approvecmd.obj
+d:\banksystem\banksystem2\x64\debug\logincmd.obj
+d:\banksystem\banksystem2\x64\debug\listcmd.obj
+d:\banksystem\banksystem2\x64\debug\helpcmd.obj
+d:\banksystem\banksystem2\x64\debug\exitcmd.obj
+d:\banksystem\banksystem2\x64\debug\dissaprovecmd.obj
+d:\banksystem\banksystem2\x64\debug\createbankcmd.obj
+d:\banksystem\banksystem2\x64\debug\commandfactory.obj
+d:\banksystem\banksystem2\x64\debug\closetask.obj
+d:\banksystem\banksystem2\x64\debug\changecmd.obj
+d:\banksystem\banksystem2\x64\debug\banksystem2.obj
+d:\banksystem\banksystem2\x64\debug\bank.obj
+d:\banksystem\banksystem2\x64\debug\validatetask.obj
+d:\banksystem\banksystem2\x64\debug\whoamicmd.obj
+d:\banksystem\banksystem2\x64\debug\viewcmd.obj
+d:\banksystem\banksystem2\x64\debug\validatecmd.obj
+d:\banksystem\banksystem2\x64\debug\taskscmd.obj
+d:\banksystem\banksystem2\x64\debug\task.obj
+d:\banksystem\banksystem2\x64\debug\sedncheckcmd.obj
+d:\banksystem\banksystem2\x64\debug\redeemcmd.obj
+d:\banksystem\banksystem2\x64\debug\opentask.obj
+d:\banksystem\banksystem2\x64\debug\opencmd.obj
+d:\banksystem\banksystem2\x64\debug\changetask.obj
+d:\banksystem\banksystem2\x64\debug\command.obj
+d:\banksystem\banksystem2\x64\debug\banksystem2.tlog\cl.command.1.tlog
+d:\banksystem\banksystem2\x64\debug\banksystem2.tlog\cl.read.1.tlog
+d:\banksystem\banksystem2\x64\debug\banksystem2.tlog\cl.write.1.tlog

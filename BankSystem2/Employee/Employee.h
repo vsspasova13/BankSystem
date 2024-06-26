@@ -3,6 +3,8 @@
 #include "../Task/Task.h"
 #include "../Client/Client.h"
 
+class Task;
+
 class Employee:public User
 {
 private:

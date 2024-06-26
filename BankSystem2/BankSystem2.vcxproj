@@ -152,7 +152,6 @@
     <ClCompile Include="Task\OpenTask.cpp" />
     <ClCompile Include="Commands\ClientCommands\RedeemCmd.cpp" />
     <ClCompile Include="Commands\ThirdPartyEmployeeCommands\SednCheckCmd.cpp" />
-    <ClCompile Include="Commands\SystemCommands\SignUp.cpp" />
     <ClCompile Include="Commands\SystemCommands\SignUpCmd.cpp" />
     <ClCompile Include="System\System.cpp" />
     <ClCompile Include="Task\Task.cpp" />
@@ -163,6 +162,7 @@
     <ClCompile Include="Commands\EmployeeCommands\ValidateCmd.cpp" />
     <ClCompile Include="Commands\EmployeeCommands\ViewCmd.cpp" />
     <ClCompile Include="Commands\UserCommands\WhoAmICmd.cpp" />
+    <ClCompile Include="Task\ValidateTask.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commands\EmployeeCommands\ApproveCmd.h" />
@@ -201,6 +201,10 @@
     <ClInclude Include="Utils\Vector.hpp" />
     <ClInclude Include="Commands\EmployeeCommands\ViewCmd.h" />
     <ClInclude Include="Commands\UserCommands\WhoAmICmd.h" />
+    <ClInclude Include="Task\ValidateTask.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

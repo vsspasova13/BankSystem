@@ -2,11 +2,8 @@
 #include "..\Utils\Vector.hpp"
 #include "..\Bank\Bank.h"
 #include "..\Utils\Polymorphic_Ptr.hpp"
-#include "..\User\User.h"
+//#include "..\User\User.h"
 #include "..\User\UserFactory.h"
-#include "..\Commands\ClientCommands\OpenCmd.h"
-#include "..\Commands\EmployeeCommands\TasksCmd.h"
-#include "..\Commands\EmployeeCommands\ApproveCmd.h"
 #include <fstream>
 
 class Bank;
@@ -27,15 +24,27 @@ public:
 		static System instance;
 		return instance;
 	}
-	Vector<Bank> getBanks()
+	Vector<Bank> getBanks()const
 	{
 		return banks;
 	}
-	Vector<Polymorphic_Ptr<User>> getUsers()
+	Vector<Polymorphic_Ptr<User>> getUsers()const
 	{
 		return users;
 	}
 	
+	Bank& findBankByName(const MyString& name)const
+	{
+		for (size_t i = 0; i < banks.getSize(); i++)
+		{
+			//MyString v= this->getBanks()[i].getName();
+			if (strcmp(this->getBanks()[i].getName().c_str(), name.c_str()) == 0)
+			{
+				return this->getBanks()[i];
+			}
+		}
+	}
+
 	void login(const MyString& name, const MyString& password);
 	void signUp(const MyString& name, long egn, int age,const MyString& userType, const MyString& bankName, const MyString& password);
 	void create_bank(const MyString& name);

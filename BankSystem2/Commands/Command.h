@@ -1,6 +1,6 @@
 #pragma once
-#include "..\..\Utils\MyString.h"
-#include "..\..\Client\Client.h"
+#include "../Utils/MyString.h"
+#include "../Client/Client.h"
 #include "..\Employee\Employee.h"
 #include "..\System\System.h"
 #include "..\User\User.h"

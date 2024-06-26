@@ -1,10 +1,13 @@
 #pragma once
-#include "MyString.h"
-#include "Vector.hpp"
-#include "Client.h"
-#include "Employee.h"
-#include "Polymorphic_Ptr.hpp"
-#include "Task.h"
+#include "..\Utils\MyString.h"
+#include "..\Utils\Vector.hpp"
+#include "..\Client\Client.h"
+#include "..\Employee\Employee.h"
+#include "..\Utils\Polymorphic_Ptr.hpp"
+#include "..\Task\Task.h"
+#include "..\Task\OpenTask.h"
+#include "..\Task\ChangeTask.h"
+#include "..\Task\CloseTask.h"
 
 class Client;
 class Employee;
@@ -22,7 +25,7 @@ public:
 	Bank(const MyString& name);
 	Polymorphic_Ptr<Task> openTask(const Client& c);
 	Polymorphic_Ptr<Task> closeTask(const Client& c);
-	Polymorphic_Ptr<Task> changeTask(const Client& c);
+	Polymorphic_Ptr<Task> changeTask(const Client& c, );
 	void giveTask(const Polymorphic_Ptr<Task> task);
 
 	const MyString& getName()const;
@@ -31,6 +34,7 @@ public:
 	Vector<Client> getClients();
 	
 	void addEmployee(const Employee& emp);
+	bool containsClientByAccountNum(long accountNum)const;
 
 };
 

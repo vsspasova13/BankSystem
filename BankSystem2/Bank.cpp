@@ -1,7 +1,4 @@
 #include "Bank.h"
-#include "OpenTask.h"
-#include "ChangeTask.h"
-#include "CloseTask.h"
 
 Bank::Bank(const MyString& name)
 {
@@ -63,4 +60,20 @@ Vector<Client> Bank::getClients()
 void Bank::addEmployee(const Employee& emp)
 {
 	employees.pushBack(emp);
+}
+
+bool Bank::containsClientByAccountNum(long accountNum) const
+{
+	for (size_t i = 0; i < clients.getSize(); i++)
+	{
+		for (size_t j = 0; j < clients[i].getAccount().getSize(); j++)
+		{
+			if (clients[i].getAccount()[j].acc_number==accountNum)
+			{
+				return true;
+			}
+
+		}
+	}
+	return false;
 }

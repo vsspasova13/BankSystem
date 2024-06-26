@@ -21,7 +21,7 @@ protected:
 	long acc_Num = 0;
 
 public:
-	Task(int id, const Client& cl) :id(id), client(cl) {};
+	//Task(int id, const Client& cl) :id(id), client(cl) {};
 	Task(int id, const Client& cl, const MyString& bankName,long accNum) :
 		id(id), client(cl),
 		bankName(bankName),
@@ -29,6 +29,7 @@ public:
 	Task(int id, const Client& cl, const MyString& bankName) :
 		id(id), client(cl),
 		bankName(bankName){};
+
 	virtual Task* clone() const = 0;
 	virtual void execute(const MyString& bankName) = 0;
 	virtual void view()const = 0;

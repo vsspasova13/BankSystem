@@ -42,6 +42,7 @@ void Employee::disapprove(int taskId, const MyString& message) const
 			empTasks[taskId]->getValidated() == true))
 	{
 		empTasks[taskId]->getClient().addMessage(message);
+		
 	}
 	else std::cout << "Cannot proceed - please make sure" << empTasks[taskId]->getClient().getName() << "is real user by asking the bank!";
 

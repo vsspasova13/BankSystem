@@ -22,17 +22,7 @@
 
 int main()
 {   
-    MyString clName = "vili";
-    MyString clRole = "Client";
-    MyString pass = "vili02";
-    long egn = 990009;
-    int age = 18; 
-    MyString eName = "Petq";
-    MyString eRole = "Employee";
-    MyString epass = "petya05";
-    long egne = 880008;
-    int eage = 19;
-    MyString bank = "OBB";
+  
 
     //System& s = System::getInstance();
    /* s.create_bank(bank);

@@ -2,5 +2,5 @@
 
 void CreateBankCmd::execute()
 {
-	//s.create_bank();
+	s.create_bank(bank);
 }

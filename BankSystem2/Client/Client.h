@@ -47,6 +47,13 @@ public:
 	Client();
 	Client(const MyString& name, long egn, int age, const MyString& passw) :User(name, egn, age, passw){};
 	unsigned long check_avl(const MyString& bankName, unsigned long accNumber)const;
+
+	Client(const Client& other)
+	{
+		this->accounts = other.accounts;
+		this->checks = other.checks;
+		this->mess = other.mess;
+	}
 	void open(const MyString& bankName);
 	void close(const MyString& bankName, unsigned long accNumber)const;
 	void redeem(const MyString& bankName, unsigned long accNumber, const MyString& code);

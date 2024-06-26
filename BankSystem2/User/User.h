@@ -20,7 +20,16 @@ public:
 	User(const MyString& name, long egn, int age, const MyString& passw) :name(name), 
 																		egn(egn), 
 																		age(age), 
-																		passw(passw) {};
+								passw(passw) {};
+
+	User(const User& other)
+	{
+		this->name = other.name;
+		this->age = other.age;
+		this->egn = other.egn;
+		this->passw = other.passw;
+	}
+
 	const char* getName()const
 	{
 		return name.c_str();

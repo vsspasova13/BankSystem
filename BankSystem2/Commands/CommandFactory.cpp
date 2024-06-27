@@ -2,6 +2,8 @@
 
 Command* CommandFactory::createCmd(const MyString& text) const
 {
+	System& s = System::getInstance();
+	Employee* e = s.getCurrEmployee();
 	//system:
 	if (text == "login")
 	{
@@ -52,9 +54,10 @@ Command* CommandFactory::createCmd(const MyString& text) const
 	//client:
 	else if (text == "open")
 	{
+		
 		char bank[1024];
 		std::cin >> bank;
-		return new OpenCmd(bank);
+		return new OpenCmd(s.getCurrClient(), bank);
 	}
 
 	else if (text == "change")
@@ -63,24 +66,24 @@ Command* CommandFactory::createCmd(const MyString& text) const
 		char currBank[1024];
 		long accNum;
 		std::cin >> newBank >> currBank >> accNum;
-		return new ChangeCmd(newBank, currBank, accNum);
+		return new ChangeCmd(s.getCurrClient(),newBank, currBank, accNum);
 	}
 	else if (text == "close")
 	{
 		char bank[1024];
 		long accNum;
 		std::cin >> bank >> accNum;
-		return new CloseCmd(bank, accNum);
+		return new CloseCmd(s.getCurrClient(),bank, accNum);
 	}
 	else if (text == "messages")
 	{
-		return new MessagesCmd();
+		return new MessagesCmd(s.getCurrClient());
 	}
 	else if (text == "list")
 	{
 		char bank[1024];
 		std::cin >> bank;
-		return new ListCmd(bank);
+		return new ListCmd(s.getCurrClient(),bank);
 	}
 	else if (text == "redeem")
 	{
@@ -88,37 +91,38 @@ Command* CommandFactory::createCmd(const MyString& text) const
 		long accNum;
 		char code[1024];
 		std::cin >> bank >> accNum >> code;
-		return new RedeemCmd(bank, accNum, code);
+		return new RedeemCmd(s.getCurrClient(),bank, accNum, code);
 	}
 
 	//employee::
+	
 	else if (text == "tasks")
 	{
-		return new TasksCmd();
+		return new TasksCmd(e);
 	}
 	else if (text == "approve")
 	{
 		int id;
 		std::cin >> id;
-		return new ApproveCmd(id);
+		return new ApproveCmd(e,id);
 	}
 	else if (text == "disapprove")
 	{
 		int id; char message[1024];
 		std::cin >> id >> message;
-		return new DisapproveCmd(id, message);
+		return new DisapproveCmd(e,id, message);
 	}
 	else if (text == "view")
 	{
 		int id;
 		std::cin >> id;
-		return new ViewCmd(id);
+		return new ViewCmd(e,id);
 	}
 	else if (text == "validate")
 	{
 		int id;
 		std::cin >> id;
-		return new ValidateCmd(id);
+		return new ValidateCmd(e,id);
 	}
 
 	//thirdParty

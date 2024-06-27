@@ -2,5 +2,5 @@
 
 void MessagesCmd::execute()
 {
-	c.messages();
+	c->messages();
 }

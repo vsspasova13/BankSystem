@@ -32,7 +32,7 @@ void Employee::approve(int taskId)
 		empTasks[taskId]->execute(bankName);
 		std::cout << "approved";
 	}
-	else std::cout << "Cannot proceed - please make sure"<< empTasks[taskId]->getClient().getName() <<"is real user by asking the bank!";
+	else std::cout << "Cannot proceed - please make sure"<< empTasks[taskId]->getClient()->getName() <<"is real user by asking the bank!";
 }
 
 void Employee::disapprove(int taskId, const MyString& message) const
@@ -41,17 +41,17 @@ void Employee::disapprove(int taskId, const MyString& message) const
 		(empTasks[taskId]->getType() == TaskType::CHANGE_TASK &&
 			empTasks[taskId]->getValidated() == true))
 	{
-		empTasks[taskId]->getClient().addMessage(message);
+		empTasks[taskId]->getClient()->addMessage(message);
 		
 	}
-	else std::cout << "Cannot proceed - please make sure" << empTasks[taskId]->getClient().getName() << "is real user by asking the bank!";
+	else std::cout << "Cannot proceed - please make sure" << empTasks[taskId]->getClient()->getName() << "is real user by asking the bank!";
 
 }
 
 bool Employee::validate(int taskId) 
 {
 	
-	Client cl=empTasks[taskId]->getClient();
+	Client* cl= empTasks[taskId]->getClient();
 	ValidateTask val(cl,empTasks[taskId]->getBankName(),empTasks[taskId]->getAccNum());
 	bool isItValidated=val.validate();
 	empTasks[taskId]->setValidated(isItValidated);

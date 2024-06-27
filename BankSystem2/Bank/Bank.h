@@ -14,27 +14,27 @@ class Bank
 {
 private:
 	MyString bankName;
-	Vector<Client> clients;
-	Vector<Employee> employees;
+	Vector<Client*> clients;
+	Vector<Employee*> employees;
 	Vector<Polymorphic_Ptr<Task>> tasks;
 
 public:
 	Bank()=default;
 	Bank(const MyString& name);
-	Polymorphic_Ptr<Task> openTask(const Client& c, const MyString& bankName);
-	Polymorphic_Ptr<Task> closeTask(const Client& c, const MyString& bankName, unsigned long accNumber);
-	Polymorphic_Ptr<Task> changeTask(const Client& c, const MyString& newBankName, const MyString& currBankName, unsigned long accNumber);
+	Polymorphic_Ptr<Task> openTask(Client* c, const MyString& bankName);
+	Polymorphic_Ptr<Task> closeTask(Client* c, const MyString& bankName, unsigned long accNumber);
+	Polymorphic_Ptr<Task> changeTask(Client* c, const MyString& newBankName, const MyString& currBankName, unsigned long accNumber);
 	void giveTask(const Polymorphic_Ptr<Task> task);
 
 	const MyString& getName()const;
 	const Vector<Polymorphic_Ptr<Task>>& getTasks()const;
-	Vector<Employee> getEmployees();
-	Vector<Client> getClients();
+	Vector<Employee*>& getEmployees();
+	Vector<Client*>& getClients();
 	
-	void addEmployee(const Employee& emp);
-	void addClient(const Client& cl);
-	void removeClient(const Client& cl);
-	size_t findClientIndex(const Client& cl)const;
+	void addEmployee(Employee* emp);
+	void addClient(Client* cl);
+	void removeClient(Client* cl);
+	size_t findClientIndex(Client* cl)const;
 	bool containsClientByAccountNum(long accountNum)const;
 
 };

@@ -1,10 +1,10 @@
 #include "ViewCmd.h"
 
-ViewCmd::ViewCmd(int id) :id(id)
+ViewCmd::ViewCmd(Employee* e,int id) :e(e),id(id)
 {
 }
 
 void ViewCmd::execute()
 {
-	e.view(id);
+	e->view(id);
 }

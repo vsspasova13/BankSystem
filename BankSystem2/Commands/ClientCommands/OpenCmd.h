@@ -1,13 +1,15 @@
 #pragma once
 #include "..\Command.h"
 
+class Client;
+
 class OpenCmd :public Command
 {
 private:
 	MyString bankName;
-	Client c;
+	Client* c;
 public:
-	OpenCmd(const MyString& bankName);
+	OpenCmd(Client* c,const MyString& bankName);
 	void execute()override;
 
 };

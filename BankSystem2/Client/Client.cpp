@@ -1,5 +1,6 @@
 #include "Client.h"
 #include "../System/System.h"
+#include "../Task/OpenTask.h"
 
 class System;
 
@@ -24,24 +25,27 @@ unsigned long Client::check_avl(const MyString& bankName, unsigned long accNumbe
 
 void Client::open(const MyString& bankName)
 {
+	std::cout <<"az sum: "<< this->getName() << std::endl;
 	System& s = System::getInstance();
 	for (size_t i = 0; i < s.getBanks().getSize(); i++)
 	{
 		if (strcmp(s.getBanks()[i].getName().c_str(), bankName.c_str()) == 0)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].openTask(*this,bankName));
+			Polymorphic_Ptr<Task> t = s.getBanks()[i].openTask(this, bankName);
+			s.getBanks()[i].giveTask(t);
+			break;
 		}
 	}
 }
 
-void Client::close(const MyString& bankName, unsigned long accNumber) const
+void Client::close(const MyString& bankName, unsigned long accNumber)
 {
 	System& s = System::getInstance();
 	for (size_t i = 0; i < s.getBanks().getSize(); i++)
 	{
 		if (s.getBanks()[i].getName() == bankName)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].closeTask(*this,bankName,accNumber));
+			s.getBanks()[i].giveTask(s.getBanks()[i].closeTask(this,bankName,accNumber));
 		}
 	}
 }
@@ -71,7 +75,7 @@ void Client::change(const MyString& newBankName, const MyString& currBankName, u
 	{
 		if (s.getBanks()[i].getName() == newBankName)
 		{
-			s.getBanks()[i].giveTask(s.getBanks()[i].changeTask(*this,newBankName,currBankName,accNumber));
+			s.getBanks()[i].giveTask(s.getBanks()[i].changeTask(this,newBankName,currBankName,accNumber));
 		}
 	}
 }
@@ -109,7 +113,7 @@ void Client::addAccount(const MyString& bankName, unsigned long accNumber)
 	{
 		if (s.getBanks()[i].getName() == bankName)
 		{
-			s.getBanks()[i].getClients().pushBack((*this));
+			s.getBanks()[i].getClients().pushBack(this);
 			this->addMessage("You opened an account in " + bankName + "! Your account id is " + (a.acc_number + "") + ".");
 			return;
 		}

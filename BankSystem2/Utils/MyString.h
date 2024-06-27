@@ -18,7 +18,7 @@ private:
 
 public:
 	MyString();
-	MyString(const char* data);
+	MyString(const char* _data);
 	MyString(const MyString& other);
 	MyString(MyString&& other) noexcept;
 	MyString& operator=(const MyString& other);

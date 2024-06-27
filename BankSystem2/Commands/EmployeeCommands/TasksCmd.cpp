@@ -2,5 +2,5 @@
 
 void TasksCmd::execute()
 {
-	e.tasks();
+	e->tasks();
 }

@@ -7,10 +7,10 @@ private:
 	MyString currBank;
 	MyString newBank;
 	long accNum;
-	Client c;
+	Client* c;
 
 public:
-	ChangeCmd(const MyString& newBank, const MyString& currBank, long accNum);
+	ChangeCmd(Client* c,const MyString& newBank, const MyString& currBank, long accNum);
 	void execute()override;
 
 };

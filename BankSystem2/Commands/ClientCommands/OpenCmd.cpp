@@ -1,10 +1,10 @@
 #include "OpenCmd.h"
 
-OpenCmd::OpenCmd(const MyString& bankName) :bankName(bankName)
+OpenCmd::OpenCmd(Client* c,const MyString& bankName) :c(c),bankName(bankName)
 {
 }
 
 void OpenCmd::execute()
 {
-	c.open(bankName);
+	c->open(bankName);
 }

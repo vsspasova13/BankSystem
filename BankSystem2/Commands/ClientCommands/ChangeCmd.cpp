@@ -1,7 +1,8 @@
 #include "ChangeCmd.h"
 
-ChangeCmd::ChangeCmd(const MyString& newBank, const MyString& currBank, long accNum)
+ChangeCmd::ChangeCmd(Client* c,const MyString& newBank, const MyString& currBank, long accNum)
 {
+	this->c = c;
 	this->newBank = newBank;
 	this->currBank = currBank;
 	this->accNum = accNum;
@@ -9,5 +10,5 @@ ChangeCmd::ChangeCmd(const MyString& newBank, const MyString& currBank, long acc
 
 void ChangeCmd::execute()
 {
-	c.change(newBank, currBank, accNum);
+	c->change(newBank, currBank, accNum);
 }

@@ -1,11 +1,11 @@
 #include "ApproveCmd.h"
 
-ApproveCmd::ApproveCmd(int id) :id(id)
+ApproveCmd::ApproveCmd(Employee* e,int id) :e(e),id(id)
 {
 
 }
 
 void ApproveCmd::execute()
 {
-	e.approve(id);
+	e->approve(id);
 }

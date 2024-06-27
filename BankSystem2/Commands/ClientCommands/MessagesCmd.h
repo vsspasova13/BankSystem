@@ -4,8 +4,9 @@
 class MessagesCmd :public Command
 {
 private:
-	Client c;
+	Client* c;
 public:
+	MessagesCmd(Client* c) :c(c) {};
 	void execute()override;
 };
 

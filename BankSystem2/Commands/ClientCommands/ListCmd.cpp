@@ -1,10 +1,10 @@
 #include "ListCmd.h"
 
-ListCmd::ListCmd(const MyString& bankName) :bankName(bankName)
+ListCmd::ListCmd(Client* c,const MyString& bankName) :c(c),bankName(bankName)
 {
 }
 
 void ListCmd::execute()
 {
-	c.list(bankName);
+	c->list(bankName);
 }

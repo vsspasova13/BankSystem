@@ -7,7 +7,7 @@ class Task;
 class OpenTask : public Task
 {
 public:
-	OpenTask(int id, const Client& cl,const MyString& bankName) : 
+	OpenTask(int id, Client* cl,const MyString& bankName) :
 		Task(id, cl, bankName) {};
 	void print()const override;
 	void view()const override;

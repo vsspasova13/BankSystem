@@ -1,7 +1,8 @@
 #include "RedeemCmd.h"
 
-RedeemCmd::RedeemCmd(const MyString& name, long accNum, const MyString& code)
+RedeemCmd::RedeemCmd(Client* c,const MyString& name, long accNum, const MyString& code)
 {
+	this->c = c;
 	bankName = name;
 	this->accNum = accNum;
 	this->code = code;
@@ -9,5 +10,5 @@ RedeemCmd::RedeemCmd(const MyString& name, long accNum, const MyString& code)
 
 void RedeemCmd::execute()
 {
-	c.redeem(bankName, accNum, code);
+	c->redeem(bankName, accNum, code);
 }

@@ -5,10 +5,10 @@ class CloseCmd :public Command
 {
 private:
 	MyString bankName;
-	Client c;
+	Client* c;
 	long accNum;
 public:
-	CloseCmd(const MyString& bankName, long accNum);
+	CloseCmd(Client* c,const MyString& bankName, long accNum);
 	void execute()override;
 };
 

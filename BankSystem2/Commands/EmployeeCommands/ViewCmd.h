@@ -4,10 +4,10 @@
 class ViewCmd :public Command
 {
 private:
-	Employee e;
+	Employee* e;
 	int id;
 public:
-	ViewCmd(int id);
+	ViewCmd(Employee* e,int id);
 	void execute()override;
 };
 

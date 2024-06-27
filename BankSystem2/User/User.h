@@ -3,6 +3,15 @@
 #include "../Utils/Vector.hpp"
 #include "../Utils/Polymorphic_Ptr.hpp"
 
+
+enum class UserType
+{
+	CLIENT,
+	EMPLOYEE,
+	THIRD_PARTY_EMPLOYEE,
+	UNKNOWN
+};
+
 class User
 {
 private:
@@ -10,6 +19,8 @@ private:
 	long egn=0;
 	int age=0;
 	MyString passw="";
+	UserType role = UserType::UNKNOWN;
+
 
 public:
 	void exit()const;
@@ -18,9 +29,11 @@ public:
 	virtual void whoami() const = 0;
 	User() = default;
 	User(const MyString& name, long egn, int age, const MyString& passw) :name(name), 
-																		egn(egn), 
-																		age(age), 
-								passw(passw) {};
+																							  egn(egn), 
+																							  age(age),
+																							 
+																							  passw(passw) {};
+	User(const MyString& name, const MyString& passw) :name(name),	passw(passw) {};
 
 	User(const User& other)
 	{
@@ -45,6 +58,22 @@ public:
 	const char* getPass()const
 	{
 		return passw.c_str();
+	}
+	UserType setUserType(const MyString& rol)
+	{
+		if (rol == "Client")
+		{
+			return UserType::CLIENT;
+		}
+		else if (rol == "Employee")
+		{
+			return UserType::EMPLOYEE;
+		}
+		else if (rol == "ThirdPartyEmployee")
+		{
+			return UserType::THIRD_PARTY_EMPLOYEE;
+		}
+		return UserType::UNKNOWN;
 	}
 };
 

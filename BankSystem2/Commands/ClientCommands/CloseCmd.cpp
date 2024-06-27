@@ -1,10 +1,10 @@
 #include "CloseCmd.h"
 
-CloseCmd::CloseCmd(const MyString& bankName, long accNum) :bankName(bankName), accNum(accNum)
+CloseCmd::CloseCmd(Client* c,const MyString& bankName, long accNum) :c(c),bankName(bankName), accNum(accNum)
 {
 }
 
 void CloseCmd::execute()
 {
-	c.close(bankName, accNum);
+	c->close(bankName, accNum);
 }

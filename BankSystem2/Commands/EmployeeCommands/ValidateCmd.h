@@ -4,10 +4,10 @@
 class ValidateCmd :public Command
 {
 private:
-	Employee e;
+	Employee* e;
 	int id;
 public:
-	ValidateCmd(int id);
+	ValidateCmd(Employee* e,int id);
 	void execute()override;
 };
 

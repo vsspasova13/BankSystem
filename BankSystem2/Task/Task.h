@@ -15,18 +15,18 @@ class Task
 {
 protected:
 	int id;
-	Client client;
+	Client* client;
 	bool validated = false;
 	MyString bankName = "";
 	long acc_Num = 0;
 
 public:
 	//Task(int id, const Client& cl) :id(id), client(cl) {};
-	Task(int id, const Client& cl, const MyString& bankName,long accNum) :
+	Task(int id, Client* cl, const MyString& bankName,long accNum) :
 		id(id), client(cl),
 		bankName(bankName),
 		acc_Num(accNum) {};
-	Task(int id, const Client& cl, const MyString& bankName) :
+	Task(int id,  Client* cl, const MyString& bankName) :
 		id(id), client(cl),
 		bankName(bankName){};
 
@@ -44,7 +44,7 @@ public:
 	{
 			return validated;
 	}
-	Client getClient()const
+	Client* getClient()const
 	{
 		return client;
 	}

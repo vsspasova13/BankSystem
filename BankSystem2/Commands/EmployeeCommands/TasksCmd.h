@@ -4,8 +4,8 @@
 class TasksCmd :public Command
 {
 private:
-	Employee e;
+	Employee* e;
 public:
-	TasksCmd() = default;
+	TasksCmd(Employee* e) :e(e) {};
 	void execute()override;
 };

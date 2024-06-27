@@ -4,10 +4,10 @@
 class ApproveCmd : public Command
 {
 private:
-	Employee e;
+	Employee* e;
 	int id;
 public:
-	ApproveCmd(int id);
+	ApproveCmd(Employee* e,int id);
 	void execute()override;
 };
 

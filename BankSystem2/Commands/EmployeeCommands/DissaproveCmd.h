@@ -4,11 +4,11 @@
 class DisapproveCmd :public Command
 {
 private:
-	Employee e;
+	Employee* e;
 	int id;
 	MyString message;
 public:
-	DisapproveCmd(int id, const MyString& mes);
+	DisapproveCmd(Employee* e,int id, const MyString& mes);
 	void execute()override;
 };
 

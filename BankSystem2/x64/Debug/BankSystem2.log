@@ -1,166 +1,70 @@
 ﻿  ApproveCmd.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   Bank.cpp
-D:\BankSystem\BankSystem2\Task\CloseTask.h(12,11): warning C4114: same type qualifier used more than once
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Bank\Bank.cpp(89,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Account>::getSize(void) const'
 D:\BankSystem\BankSystem2\Bank\Bank.cpp(97,3): message : see the first reference to 'Vector<Account>::getSize' in 'Bank::containsClientByAccountNum'
 D:\BankSystem\BankSystem2\Client\Client.h(42,18): message : see reference to class template instantiation 'Vector<Account>' being compiled
   BankSystem2.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  ChangeCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  ChangeTask.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  CheckAvlCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  Client.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Account>::getSize(void) const'
-D:\BankSystem\BankSystem2\Client\Client.cpp(15,2): message : see the first reference to 'Vector<Account>::getSize' in 'Client::check_avl'
-D:\BankSystem\BankSystem2\Client\Client.h(42,18): message : see reference to class template instantiation 'Vector<Account>' being compiled
-  CloseCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  CloseTask.cpp
-D:\BankSystem\BankSystem2\Task\CloseTask.h(12,11): warning C4114: same type qualifier used more than once
-  Command.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   CommandExecutor.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   CommandFactory.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  CreateBankCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  DissaproveCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  Employee.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Polymorphic_Ptr<Task>>::getSize(void) const'
-D:\BankSystem\BankSystem2\Employee\Employee.cpp(6,2): message : see the first reference to 'Vector<Polymorphic_Ptr<Task>>::getSize' in 'Employee::tasksCount'
-D:\BankSystem\BankSystem2\Employee\Employee.h(12,32): message : see reference to class template instantiation 'Vector<Polymorphic_Ptr<Task>>' being compiled
-  ExitCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  HelpCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  ListCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  LoginCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   MessagesCmd.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  Generating Code...
-D:\BankSystem\BankSystem2\Commands\CommandFactory.cpp(148): warning C4715: 'CommandFactory::createCmd': not all control paths return a value
-D:\BankSystem\BankSystem2\System\System.h(46): warning C4715: 'System::findBankByName': not all control paths return a value
-D:\BankSystem\BankSystem2\Main\BankSystem2.cpp(19): warning C4172: returning address of local variable or temporary: word
-  Compiling...
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   OpenCmd.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  OpenTask.cpp
-  RedeemCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  SednCheckCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   SignUpCmd.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   System.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\BankSystem\BankSystem2\System\System.cpp(33,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\BankSystem\BankSystem2\System\System.cpp(44,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\BankSystem\BankSystem2\System\System.cpp(56,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  Task.cpp
-  TasksCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Client *>::getSize(void) const'
+D:\BankSystem\BankSystem2\System\System.cpp(29,3): message : see the first reference to 'Vector<Client *>::getSize' in 'System::ValidateUser'
+D:\BankSystem\BankSystem2\Bank\Bank.h(17,18): message : see reference to class template instantiation 'Vector<Client *>' being compiled
   ThirdPartyEmployee.cpp
+D:\BankSystem\BankSystem2\System\System.h(58,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  User.cpp
-  UserFactory.cpp
-  ValidateCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  ViewCmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  WhoAmICmd.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
-  ValidateTask.cpp
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(496,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\BankSystem\BankSystem2\Utils\Vector.hpp(495,32): message : while compiling class template member function 'int Vector<Bank>::getSize(void) const'
-D:\BankSystem\BankSystem2\System\System.h(38,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
-D:\BankSystem\BankSystem2\System\System.h(14,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
+D:\BankSystem\BankSystem2\System\System.h(44,3): message : see the first reference to 'Vector<Bank>::getSize' in 'System::findBankByName'
+D:\BankSystem\BankSystem2\System\System.h(18,15): message : see reference to class template instantiation 'Vector<Bank>' being compiled
   Generating Code...
-D:\BankSystem\BankSystem2\System\System.h(46): warning C4715: 'System::findBankByName': not all control paths return a value
+D:\BankSystem\BankSystem2\System\System.cpp(124): warning C4715: 'System::getUserType': not all control paths return a value
+D:\BankSystem\BankSystem2\System\System.h(61): warning C4715: 'System::findBankIndByName': not all control paths return a value
+D:\BankSystem\BankSystem2\Commands\CommandFactory.cpp(152): warning C4715: 'CommandFactory::createCmd': not all control paths return a value
+D:\BankSystem\BankSystem2\Main\BankSystem2.cpp(19): warning C4172: returning address of local variable or temporary: word
   BankSystem2.vcxproj -> D:\BankSystem\BankSystem2\x64\Debug\BankSystem2.exe

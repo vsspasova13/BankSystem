@@ -20,6 +20,7 @@ private:
 	System() {}
 	Client* currClient = nullptr;
 	Employee* currEmp = nullptr;
+	ThirdPartyEmployee* currThirdPartyEmp = nullptr;
 public:
 	
 	System(const System&) = delete;
@@ -68,12 +69,18 @@ public:
 	{
 		return currEmp;
 	}
+	ThirdPartyEmployee* getCurrTPEmployee()const
+	{
+		return currThirdPartyEmp;
+	}
+	void exitCmd();
+
+	bool isSomeoneLogged()const;
 
 	void login(const MyString& name, const MyString& password);
 	void signUp(const MyString& name, long egn, int age,const MyString& userType, const MyString& bankName, const MyString& password);
 	void create_bank(const MyString& name);
 	void writeInFile(const MyString& fileName, const User& u)const;
-	void writeInFileEmployees(const MyString& fileName, const Employee& e)const;
 	bool ValidateUser(const MyString& name, const MyString& pass, const MyString& role, int& index);
 	MyString getUserType(const MyString& name, const MyString& password) const;
 };

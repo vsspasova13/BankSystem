@@ -397,7 +397,7 @@ void Vector<T>::pushBack(const T& element) {
         resize(capacity * 2);
     }
     data[size++] = element;
-    std::cout << "pushed" << " size:" << size<<std::endl;
+    
 }
 
 template <typename T>

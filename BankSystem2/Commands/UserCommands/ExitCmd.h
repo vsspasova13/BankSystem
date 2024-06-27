@@ -3,7 +3,7 @@
 
 class ExitCmd :public Command
 {
-	//User u;
+	System& s = System::getInstance();
 public:
 	ExitCmd() = default;
 	void execute()override;

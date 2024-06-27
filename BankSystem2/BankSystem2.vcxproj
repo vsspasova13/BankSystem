@@ -168,6 +168,7 @@
     <ClInclude Include="Commands\EmployeeCommands\ApproveCmd.h" />
     <ClInclude Include="Bank\Bank.h" />
     <ClInclude Include="Commands\ClientCommands\ChangeCmd.h" />
+    <ClInclude Include="Utils\Queue.hpp" />
     <ClInclude Include="Task\ChangeTask.h" />
     <ClInclude Include="Commands\ClientCommands\CheckAvlCmd.h" />
     <ClInclude Include="Client\Client.h" />

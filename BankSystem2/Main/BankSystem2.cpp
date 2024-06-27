@@ -22,13 +22,7 @@
 
 int main()
 {   
-  
-
-    //System& s = System::getInstance();
-   /* s.create_bank(bank);
-    s.signUp(clName, egn, age, clRole, "", pass);
-    s.signUp(eName, egne, eage, eRole, bank, epass);*/
-
+    System& s = System::getInstance();
     CommandFactory commandFactory;
     CommandExecutor invoker;
 
@@ -37,8 +31,8 @@ int main()
         std::cout << "Enter command: ";
         char commandLine[1024];
         std::cin >> commandLine;
-      
-        if (strcmp(commandLine,"exit")==0)
+
+        if (strcmp(commandLine,"exit")==0 && (s.getCurrClient()==nullptr && s.getCurrEmployee()==nullptr && s.getCurrTPEmployee()==nullptr))
         {
             break;
         }
@@ -52,6 +46,7 @@ int main()
             std::cout << "Invalid command: " << commandLine << std::endl;
         }
         invoker.executeCommands();
+        std::cout<<std::endl;
     }
 
 

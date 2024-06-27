@@ -9,10 +9,11 @@
 class Client;
 class Employee;
 class Task;
-
+static int id = 1;
 class Bank
 {
 private:
+
 	MyString bankName;
 	Vector<Client*> clients;
 	Vector<Employee*> employees;

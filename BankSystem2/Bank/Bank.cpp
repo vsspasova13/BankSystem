@@ -8,23 +8,27 @@ Bank::Bank(const MyString& name)
 	this->bankName = name;
 }
 
+
 Polymorphic_Ptr<Task> Bank::openTask(Client* c, const MyString& bankName)
 {
-	Polymorphic_Ptr<Task> task(new OpenTask(tasks.getSize(), c, bankName));
+	Polymorphic_Ptr<Task> task(new OpenTask(id, c, bankName));
+	id++;
 	tasks.pushBack(task);
 	return task;
 }
 
 Polymorphic_Ptr<Task> Bank::closeTask(Client* c, const MyString& currBankName, unsigned long accNumber)
 {
-	Polymorphic_Ptr<Task> task(new CloseTask(tasks.getSize(), c,currBankName,accNumber));
+	Polymorphic_Ptr<Task> task(new CloseTask(id, c,currBankName,accNumber));
+	id++;
 	tasks.pushBack(task);
 	return task;
 	
 }
 Polymorphic_Ptr<Task> Bank::changeTask(Client* c, const MyString& newBankName, const MyString& currBankName, unsigned long accNumber)
 {
-	Polymorphic_Ptr<Task> task(new ChangeTask(tasks.getSize(), c,newBankName,currBankName,accNumber));
+	Polymorphic_Ptr<Task> task(new ChangeTask(id, c,newBankName,currBankName,accNumber));
+	id++;
 	tasks.pushBack(task);
 	return task;
 }

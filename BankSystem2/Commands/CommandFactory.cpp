@@ -7,11 +7,15 @@ Command* CommandFactory::createCmd(const MyString& text) const
 	//system:
 	if (text == "login")
 	{
+		if (s.isSomeoneLogged()) 
+		{
+			std::cout << "Two users can't be logged at the same time!" << std::endl;
+			return;
+		}
 		char name[1024];
 		char passw[1024];
 		std::cout << "Name: ";
 		std::cin >> name;
-		std::cout << std::endl;
 		std::cout << "Password: ";
 		std::cin >> passw;
 
@@ -109,7 +113,9 @@ Command* CommandFactory::createCmd(const MyString& text) const
 	else if (text == "disapprove")
 	{
 		int id; char message[1024];
-		std::cin >> id >> message;
+		std::cin >> id;
+		std::cin.ignore();
+		std::cin.getline(message,1024);
 		return new DisapproveCmd(e,id, message);
 	}
 	else if (text == "view")

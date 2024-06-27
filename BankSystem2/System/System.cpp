@@ -11,16 +11,6 @@ void System::writeInFile(const MyString& fileName, const User& u)const
 	ofs.close();
 }
 
-void System::writeInFileEmployees(const MyString& fileName, const Employee& e)const
-{
-	std::ofstream ofs(fileName.c_str(), std::ios::out | std::ios::app);
-	if (!ofs.is_open())
-		throw std::exception("Error while opening the file.");
-	ofs << e.getName() << " " << e.getPass() << std::endl;
-
-	ofs.close();
-}
-
 bool System::ValidateUser(const MyString& name, const MyString& pass,const MyString& role, int& index)
 {
 	index = -1;
@@ -121,23 +111,45 @@ MyString System::getUserType(const MyString& name, const MyString& password) con
 	{
 		return MyString("ThirdPartyEmployee");
 	}
+	return MyString("Unknown");
 }
 
+
+void System::exitCmd()
+{
+	currClient = nullptr;
+	currEmp = nullptr;
+	currThirdPartyEmp = nullptr;
+}
+
+bool System::isSomeoneLogged() const
+{
+	return (currClient != nullptr || currEmp != nullptr || currThirdPartyEmp != nullptr);
+}
 
 void System::login(const MyString& name, const MyString& password)
 {
 	
 	int ind;
-	//Vector<Polymorphic_Ptr<User>> u=this->users;
+	
 	MyString role = s.getUserType(name,password);
-	//ValidateUser(name, password,role,ind);
-	if (!ValidateUser(name, password,role,ind))std::cout << "No such User!";
-	
-	if (strcmp(role.c_str(),"Client")==0)
+	if(strcmp(role.c_str(),"Unknown")==0) std::cout << "No such User!";
+	//if (!ValidateUser(name, password,role,ind))
+	ValidateUser(name, password, role, ind);
+	if (strcmp(role.c_str(), "Client") == 0)
+	{
 		currClient = clients[ind];
-	else if (strcmp(role.c_str(),"Employee")==0)
-		currEmp = employees[ind];
-	
+	}
+		
+	else if (strcmp(role.c_str(), "Employee") == 0)
+	{
+		 currEmp = employees[ind];
+	}
+		
+	else if (strcmp(role.c_str(), "ThirdPartyEmployee") == 0)
+	{
+		currThirdPartyEmp = ThirdPEmp[ind];
+	}
 
 }
 
@@ -167,7 +179,7 @@ void System::signUp(const MyString& name, long egn, int age, const MyString& use
 		Employee* emp(u.createEmployee(name, egn, age, bankName, password));
 		employees.pushBack(emp);
 		users.pushBack(Polymorphic_Ptr<User>(emp));
-		writeInFileEmployees("Employees.txt", *emp);
+		writeInFile("Employees.txt", *emp);
 		int i = s.findBankIndByName(bankName);
 		banks[i].addEmployee(emp);
 		std::cout << "Employee " << name.c_str() << " signed up for bank "<<i << banks[i].getName().c_str() << std::endl;
@@ -187,7 +199,7 @@ void System::signUp(const MyString& name, long egn, int age, const MyString& use
 		ThirdPEmp.pushBack(t);
 		Polymorphic_Ptr<User> userr(u.createThirdPartyEmployee(name, egn, age, password));
 		users.pushBack(userr);
-		writeInFile("ThirdPartyEmployees.txt", *userr);
+		writeInFile("ThirdPartyEmployees.txt", *t);
 		std::cout << "Third-party employeer " << name.c_str() << " signed up." << std::endl;
 	}
 }

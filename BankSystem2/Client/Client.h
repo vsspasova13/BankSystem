@@ -59,10 +59,7 @@ public:
 	void addAccount(const MyString& bankName, unsigned long accNumber);
 	void removeAccount(const MyString& bankName, unsigned long accNumber);	
 	void addMessage(const MyString& mes);
-	Vector<Account> getAccount()const
-	{
-		return accounts;
-	}
+	Vector<Account> getAccount()const;
 	virtual void help()const override;
 	virtual void whoami() const override;
 

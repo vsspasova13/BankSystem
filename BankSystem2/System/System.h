@@ -26,53 +26,15 @@ public:
 	System(const System&) = delete;
 	void operator=(const System&) = delete;
 
-	static System& getInstance() 
-	{
-		static System instance;
-		return instance;
-	}
-	Vector<Bank> getBanks()const
-	{
-		return banks;
-	}
-	Vector<Polymorphic_Ptr<User>> getUsers()const
-	{
-		return users;
-	}
-	
-	Bank& findBankByName(const MyString& name)const
-	{
-		for (size_t i = 0; i < banks.getSize(); i++)
-		{
-			if (strcmp(this->getBanks()[i].getName().c_str(), name.c_str()) == 0)
-			{
-				return this->getBanks()[i];
-			}
-		}
-	}
-	int findBankIndByName(const MyString& name)const
-	{
-		for (size_t i = 0; i < banks.getSize(); i++)
-		{
-			if (strcmp(this->getBanks()[i].getName().c_str(), name.c_str()) == 0)
-			{
-				return i;
-			}
-		}
-	}
+	static System& getInstance();
+	Vector<Bank> getBanks()const;
+	Vector<Polymorphic_Ptr<User>> getUsers()const;
+	Bank& findBankByName(const MyString& name)const;
+	int findBankIndByName(const MyString& name)const;
 
-	Client* getCurrClient()const
-	{
-		return currClient;
-	}
-	Employee* getCurrEmployee()const
-	{
-		return currEmp;
-	}
-	ThirdPartyEmployee* getCurrTPEmployee()const
-	{
-		return currThirdPartyEmp;
-	}
+	Client* getCurrClient()const;
+	Employee* getCurrEmployee()const;
+	ThirdPartyEmployee* getCurrTPEmployee()const;
 	void exitCmd();
 
 	bool isSomeoneLogged()const;

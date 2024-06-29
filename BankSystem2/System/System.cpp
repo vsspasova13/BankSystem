@@ -127,6 +127,55 @@ bool System::isSomeoneLogged() const
 	return (currClient != nullptr || currEmp != nullptr || currThirdPartyEmp != nullptr);
 }
 
+
+System& System::getInstance()
+{
+	static System instance;
+	return instance;
+}
+Vector<Bank> System::getBanks()const
+{
+	return banks;
+}
+Vector<Polymorphic_Ptr<User>> System::getUsers()const
+{
+	return users;
+}
+
+Bank& System::findBankByName(const MyString& name)const
+{
+	for (size_t i = 0; i < banks.getSize(); i++)
+	{
+		if (strcmp(this->getBanks()[i].getName().c_str(), name.c_str()) == 0)
+		{
+			return this->getBanks()[i];
+		}
+	}
+}
+int System::findBankIndByName(const MyString& name)const
+{
+	for (size_t i = 0; i < banks.getSize(); i++)
+	{
+		if (strcmp(this->getBanks()[i].getName().c_str(), name.c_str()) == 0)
+		{
+			return i;
+		}
+	}
+}
+
+Client* System::getCurrClient()const
+{
+	return currClient;
+}
+Employee* System::getCurrEmployee()const
+{
+	return currEmp;
+}
+ThirdPartyEmployee* System::getCurrTPEmployee()const
+{
+	return currThirdPartyEmp;
+}
+
 void System::login(const MyString& name, const MyString& password)
 {
 	

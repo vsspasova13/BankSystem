@@ -6,22 +6,13 @@
 #include "../System/System.h"
 #include "../Commands/CommandExecutor.h"
 
- const MyString& firstWord()
-    {
-        MyString word="";
-        char ch;
-        ch=std::cin.get();
-        while (ch != ' ')
-        {
-            word += ch;
-            ch=std::cin.get();
-        }
-        return word;
 
-    }
+
+
+
 
 int main()
-{   
+{    
     System& s = System::getInstance();
     CommandFactory commandFactory;
     CommandExecutor invoker;
@@ -35,6 +26,11 @@ int main()
         if (strcmp(commandLine,"exit")==0 && (s.getCurrClient()==nullptr && s.getCurrEmployee()==nullptr && s.getCurrTPEmployee()==nullptr))
         {
             break;
+        }
+        if (strcmp(commandLine, "login") == 0 && s.isSomeoneLogged())
+        {
+            std::cout << "Two users can't be logged at the same time!" << std::endl;
+            continue;
         }
         Command* command = commandFactory.createCmd(commandLine);
         if (command) 

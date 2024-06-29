@@ -1,10 +1,10 @@
 #include "CheckAvlCmd.h"
 
-CheckAvlCmd::CheckAvlCmd(const MyString& bankName, long accNum) :bankName(bankName), accNum(accNum)
+CheckAvlCmd::CheckAvlCmd(Client* c,const MyString& bankName, long accNum) :cl(c),bankName(bankName), accNum(accNum)
 {
 }
 
 void CheckAvlCmd::execute()
 {
-	cl.check_avl(bankName, accNum);
+	cl->check_avl(bankName, accNum);
 }

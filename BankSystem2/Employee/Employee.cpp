@@ -42,6 +42,7 @@ void Employee::view(int taskId) const
 
 void Employee::approve(int taskId) 
 {
+	taskId -= 1;
 	if((empTasks[taskId]->getType()!=TaskType::CHANGE_TASK)||
 	(empTasks[taskId]->getType()==TaskType::CHANGE_TASK &&
 	empTasks[taskId]->getValidated()==true))

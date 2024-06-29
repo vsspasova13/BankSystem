@@ -42,9 +42,9 @@ void Bank::giveTask(const Polymorphic_Ptr<Task> task)
 		if (employees[i]->tasksCount() < minCount)minInd = i;
 	}
 	employees[minInd]->addTask(task);
-	std::cout << "added clname:" << task->getClient()->getName() << " task: ";
+	/*std::cout << "added clname:" << task->getClient()->getName() << " task: ";
 	task->view();
-	std::cout << "Emp: " << employees[minInd]->getName() << std::endl;
+	std::cout << "Emp: " << employees[minInd]->getName() << std::endl;*/
 }
 
 const MyString& Bank::getName()const

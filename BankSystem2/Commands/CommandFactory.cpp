@@ -7,11 +7,6 @@ Command* CommandFactory::createCmd(const MyString& text) const
 	//system:
 	if (text == "login")
 	{
-		if (s.isSomeoneLogged()) 
-		{
-			std::cout << "Two users can't be logged at the same time!" << std::endl;
-			return;
-		}
 		char name[1024];
 		char passw[1024];
 		std::cout << "Name: ";
@@ -78,6 +73,13 @@ Command* CommandFactory::createCmd(const MyString& text) const
 		long accNum;
 		std::cin >> bank >> accNum;
 		return new CloseCmd(s.getCurrClient(),bank, accNum);
+	}
+	else if (text == "check_avl")
+	{
+		char bank[1024];
+		long accNum;
+		std::cin >> bank >> accNum;
+		return new CheckAvlCmd(s.getCurrClient(), bank, accNum);
 	}
 	else if (text == "messages")
 	{

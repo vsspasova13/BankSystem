@@ -59,7 +59,7 @@ public:
 	{
 		return passw.c_str();
 	}
-	UserType setUserType(const MyString& rol)
+	/*UserType setUserType(const MyString& rol)
 	{
 		if (rol == "Client")
 		{
@@ -74,6 +74,6 @@ public:
 			return UserType::THIRD_PARTY_EMPLOYEE;
 		}
 		return UserType::UNKNOWN;
-	}
+	}*/
 };
 

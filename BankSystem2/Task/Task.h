@@ -36,26 +36,11 @@ public:
 	virtual void print()const = 0;
 	virtual TaskType getType()const = 0;
 	virtual ~Task() = default;
-	void setValidated(bool value)
-	{
-		validated = value;
-	}
-	bool getValidated()const
-	{
-			return validated;
-	}
-	Client* getClient()const
-	{
-		return client;
-	}
-	const MyString& getBankName()const
-	{
-		return bankName;
-	}
-	long getAccNum()const
-	{
-		return acc_Num;
-	}
+	void setValidated(bool value);
+	bool getValidated()const;
+	Client* getClient()const;
+	const MyString& getBankName()const;
+	long getAccNum()const;
 
 };
 

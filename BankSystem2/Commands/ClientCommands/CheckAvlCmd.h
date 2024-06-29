@@ -7,10 +7,10 @@ class CheckAvlCmd :public Command
 private:
 	MyString bankName;
 	long accNum;
-	Client cl;
+	Client* cl;
 
 public:
-	CheckAvlCmd(const MyString& bankName, long accNum);
+	CheckAvlCmd(Client* c,const MyString& bankName, long accNum);
 	void execute()override;
 };
 

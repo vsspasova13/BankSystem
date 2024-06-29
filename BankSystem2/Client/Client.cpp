@@ -140,6 +140,11 @@ void Client::addMessage(const MyString& mes)
 	this->mess.pushBack(m);
 }
 
+Vector<Account> Client::getAccount() const
+{
+	return accounts;
+}
+
 void Client::help() const
 {
 	std::cout << "1.check_avl [bank_name] [account_number]-Displays the balance of the account with number[account_number] in the bank with name[bank_name]" << std::endl;
